@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ageingtalks</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<div class="wrapper">
+  		<div class="container-fluid">
+  			<div class="row header">
+  				<div class="col-lg-2 col-xs-1">
+   				</div>
+   				<div class="col-lg-8 col-xs-10">
+   					<br>
+   					<div class="row">
+   						<div class="col-sm-8">
+   							<p class="email_top">
+   								<b>ageingforum2017@gmail.com</b>
+   							</p>
+   						</div>
+   						<div class="col-sm-2 col-xs-hidden">
+   							
+   						</div>
+   					</div>
+   				</div>
+   				<div class="col-lg-2 col-xs-1">
+   					
+   				</div>
+  			</div>
+  			<div class="row">
+  				<div class="col-lg-2 col-xs-1">
+   				</div>
+  				<div class="col-lg-8 col-xs-10">
+  					<br>
+  					<br>
+  					<%= yield %>
+  				</div>
+  				<div class="col-lg-2 col-xs-1">
+   				</div>
+  			</div>
+  		</div>
+  	</div>
+
+  </body>
+</html>
